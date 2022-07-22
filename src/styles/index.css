@@ -1,12 +1,123 @@
 
-/* 
+/* General Layout and buttons styling */
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.buttons {
+    padding: 25vh 10vw 0vh 0vw;
+}
 
-*/
+.btn {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  margin: 3vh 0vw;
+}
+
+.button-63:active,
+.button-63:hover {
+  outline: 0;
+}
+
+/* General Traffic Lights Styling*/
+.flexContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.trafficLightHolder{
+    background-color: rgb(57, 58, 65);
+    height: 10vh;
+    width: 2vw;
+    margin-bottom: 0%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.light{
+    margin-top: 2vh;
+    border-radius: 50%;
+    height: 18vh;
+    width: 10vw;
+}
+/* END of General Traffic Lights Styling*/
+
+
+/* Traffic Lights Styling with purple*/
+.trafficLightBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(38, 39, 44);
+    height: 85vh;
+    width: 12vw;
+    margin-top: 0%;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+/* Turned off lights styling with purple*/
+
+.red{
+    background: rgb(249,24,0);
+    background: radial-gradient(circle, rgba(249,24,0,1) 0%, rgba(130,22,14,1) 63%, rgba(70,8,8,1) 88%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.yellow{
+    background: rgb(249,233,0);
+    background: radial-gradient(circle, rgba(249,233,0,1) 0%, rgba(130,90,14,1) 63%, rgba(70,48,8,1) 88%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.green{
+    background: rgb(0,249,83);
+    background: radial-gradient(circle, rgba(0,249,83,1) 0%, rgba(14,130,64,1) 57%, rgba(8,70,40,1) 88%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.purple{
+    background: rgb(204,0,249);
+    background: radial-gradient(circle, rgba(204,0,249,1) 0%, rgba(97,14,130,1) 57%, rgba(56,8,70,1) 88%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/* End of Turned off lights styling */
+
+/* Turned on lights styling */
+.lightOnRed{
+    box-shadow:0 0 100px #db0606;
+}
+
+.lightOnYellow{
+    box-shadow:0 0 100px #ffff00;
+}
+
+.lightOnGreen{
+    box-shadow:0 0 100px #33ff00;
+}
+
+.lightOnPurple{
+    box-shadow:0 0 100px #9900ff;
+}
+/* End of Turned on lights styling */
