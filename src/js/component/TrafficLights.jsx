@@ -14,6 +14,20 @@ const TrafficLights = () => {
 		setSelected(clicked);
 	}
     // End of function to turn lights on manually
+
+    // Button Cycle Turned on lights
+    const colors = ["red", "yellow", "green", "purple"];
+    let index = 0;
+
+    const handleCycle = () => {setInterval(() => { 
+            if (index === colors.length) { 
+                index = 0; 
+            } 
+            setSelected(colors[index++]);
+        }, 2000);
+    }
+    // End of Button Cycle Turned on lights
+
     // function to show/hide purple light
             // first function shows/hides the purple light
     const [purpleOn, setPurpleOn] = useState("false");
@@ -41,7 +55,7 @@ const TrafficLights = () => {
                 </div>
                 <div className="buttons">
                 <button className="btn" onClick={() => {handleLightBoxSmall(); handlePurple()}}>Purple Light ON/OFF</button>
-                <button id="buttonCycle" className="btn">Cycle through lights</button>
+                <button id="buttonCycle" className="btn" onClick={handleCycle}>Cycle through lights</button>
                 </div>
             </div>
         </>
@@ -49,3 +63,5 @@ const TrafficLights = () => {
 };
 
 export default TrafficLights;
+
+// I believe the cycle can be stopped using UseEffect State, adding another button with clearInterval() method.  However I dont know how to use useEffect yet.  
