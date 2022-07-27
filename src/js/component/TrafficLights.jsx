@@ -63,5 +63,3 @@ const TrafficLights = () => {
 };
 
 export default TrafficLights;
-
-// I believe the cycle can be stopped using UseEffect State, adding another button with clearInterval() method.  However I dont know how to use useEffect yet.  

@@ -2,7 +2,6 @@
 import React, {useState} from "react";
 // Import components
 import TrafficLights from "./TrafficLights.jsx";
-import ButtonCycle from "./ButtonCycle.jsx";
 
 // Component:
 const Home = () => {
